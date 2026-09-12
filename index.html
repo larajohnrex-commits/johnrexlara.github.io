@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of John Rex D. Lara - Criminology Graduate and Virtual Assistant.">
+  <title>John Rex D. Lara | Professional Portfolio</title>
+  <style>
+    :root{
+      --bg:#0b1220; --surface:#111a2b; --surface2:#172238;
+      --text:#f5f7fb; --muted:#aab6ca; --accent:#5eead4; --accent2:#38bdf8;
+      --border:rgba(255,255,255,.09); --max:1100px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#09101d,#0d1627 45%,#0a1120);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(92%,var(--max));margin:auto}
+    nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(9,16,29,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+    .nav-links{display:flex;gap:24px;list-style:none;font-size:.93rem;color:var(--muted)}
+    .nav-links a:hover{color:var(--text)}
+    .menu{display:none;background:none;border:0;color:white;font-size:1.5rem}
+    .hero{min-height:100vh;display:grid;place-items:center;padding:120px 0 70px}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.82rem;margin-bottom:14px}
+    h1{font-size:clamp(2.7rem,7vw,5.3rem);line-height:1.02;letter-spacing:-3px;margin-bottom:22px}
+    h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}
+    .hero p{font-size:1.08rem;color:var(--muted);max-width:680px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{padding:12px 20px;border-radius:10px;border:1px solid var(--border);font-weight:700;transition:.2s}
+    .btn.primary{background:var(--accent);color:#07131b;border-color:var(--accent)}
+    .btn.secondary:hover{background:var(--surface2)}
+    .profile-card{background:linear-gradient(145deg,var(--surface2),var(--surface));border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.28)}
+    .avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#07131b;font-size:3.2rem;font-weight:900}
+    .profile-card h2{text-align:center}.profile-card .role{text-align:center;color:var(--muted);margin:5px 0 22px}
+    .quick{display:grid;gap:12px}.quick div{padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.035);border:1px solid var(--border)}
+    section{padding:95px 0}.section-title{font-size:2rem;margin-bottom:10px}.section-sub{color:var(--muted);max-width:700px;margin-bottom:34px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .card{background:rgba(17,26,43,.8);border:1px solid var(--border);border-radius:16px;padding:25px}
+    .card h3{margin-bottom:8px}.card p,.card li{color:var(--muted)}
+    .timeline{display:grid;gap:18px}.timeline .card{position:relative;padding-left:28px}.timeline .card:before{content:"";position:absolute;left:0;top:30px;width:7px;height:7px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px rgba(94,234,212,.1)}
+    .tag-list{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:8px 12px;border-radius:999px;background:rgba(94,234,212,.08);border:1px solid rgba(94,234,212,.18);color:#c9fff7;font-size:.9rem}
+    ul{padding-left:20px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);text-align:center;font-size:.9rem}
+    @media(max-width:800px){
+      .nav-links{display:none}.menu{display:block}.nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;background:#0b1220;flex-direction:column;padding:20px 5%;gap:15px}
+      .hero-grid,.grid,.contact{grid-template-columns:1fr}.hero{padding-top:110px}.profile-card{max-width:480px;margin:auto}section{padding:75px 0}h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">REX<span>.</span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+      <li><a href="#training">Training</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Professional Portfolio</div>
+        <h1>John Rex D.<br><span>Lara</span></h1>
+        <p>Criminology graduate and detail-oriented professional with experience in customer service, data entry, operations, delivery, and administrative support. Committed to reliable, efficient, and professional service.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">Get in Touch</a>
+          <a class="btn secondary" href="#experience">View Experience</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar">JR</div>
+        <h2>Criminology Graduate</h2>
+        <div class="role">Virtual Assistant • Customer Service • Data Entry</div>
+        <div class="quick">
+          <div><strong>Education</strong><br>Bachelor of Science in Criminology</div>
+          <div><strong>License</strong><br>Registered Criminologist</div>
+          <div><strong>Location</strong><br>Lucena City, Quezon, Philippines</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">A motivated professional who combines a criminology background with practical work experience and a strong focus on accuracy, responsibility, and continuous learning.</p>
+      <div class="grid">
+        <div class="card"><h3>Education</h3><p><strong>Bachelor of Science in Criminology</strong><br>Alpha Centauri Educational System Inc. (ACES), Lucena City, Quezon</p><br><p>Passed the Criminology Licensure Examination in February 2024.</p></div>
+        <div class="card"><h3>Professional Approach</h3><p>I value integrity, attention to detail, teamwork, adaptability, and completing assigned tasks with focus and determination.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">Practical experience across operations, sales, delivery, food service, and administrative work.</p>
+      <div class="timeline">
+        <div class="card"><h3>Virtual Assistant / Administrative Support</h3><p>Data entry, online research, organization, communication, and administrative support.</p></div>
+        <div class="card"><h3>Sales Encoder</h3><p>Accurate encoding and organization of sales-related information and records.</p></div>
+        <div class="card"><h3>Production Operator — Motorcycle Parts</h3><p>Followed production procedures while maintaining focus, accuracy, and efficiency.</p></div>
+        <div class="card"><h3>Delivery Rider — Water Refilling Station</h3><p>Handled deliveries responsibly while providing courteous customer service.</p></div>
+        <div class="card"><h3>Kitchen Crew</h3><p>Supported daily operations, maintained cleanliness, and worked effectively as part of a team.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="training">
+    <div class="container">
+      <h2 class="section-title">On-the-Job Training</h2>
+      <p class="section-sub">Field exposure that strengthened my understanding of public safety, investigation, and community service.</p>
+      <div class="grid">
+        <div class="card"><h3>Police Departments</h3><p>Internship rotations with local police departments in Lucena City, Tayabas City, and Pagbilao, Quezon.</p></div>
+        <div class="card"><h3>Bureau of Fire Protection</h3><p>Multiple internship rotations with the Bureau of Fire Protection in Tayabas City.</p></div>
+        <div class="card"><h3>PNP Highway Patrol Group</h3><p>Practical exposure to public safety and highway patrol operations.</p></div>
+        <div class="card"><h3>PNP CIDG</h3><p>Internship exposure to investigative and law-enforcement functions.</p></div>
+      </div>
+      <div style="height:20px"></div>
+      <h2 class="section-title" style="font-size:1.5rem">Training & Certifications</h2>
+      <div class="grid" style="margin-top:18px">
+        <div class="card"><h3>Standard Basic Life Support, CPR with AED</h3><p>Philippine Red Cross — Quezon-Lucena City Chapter</p></div>
+        <div class="card"><h3>Driving NC II</h3><p>Technical Education and Skills Development Authority (TESDA)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Core skills I can bring to customer service, administrative, data entry, and public-service roles.</p>
+      <div class="tag-list">
+        <span class="tag">Computer Literate</span><span class="tag">Data Entry</span><span class="tag">Customer Service</span>
+        <span class="tag">Virtual Assistance</span><span class="tag">Attention to Detail</span><span class="tag">Communication</span>
+        <span class="tag">Teamwork</span><span class="tag">Time Management</span><span class="tag">Basic First Aid</span>
+        <span class="tag">Basic Life Support</span><span class="tag">CPR with AED</span><span class="tag">Driving NC II</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-sub">Interested in working with me? Replace the placeholder contact details below with your preferred information.</p>
+      <div class="contact">
+        <div class="card"><h3>Email</h3><p><a href="mailto:larajohnrexrcrim@gmail.com">larajohnrexrcrim@gmail.com</a></p></div>
+        <div class="card"><h3>Phone</h3><p><a href="tel:+639668228798">09668228798</a></p></div>
+        <div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/john-rex-lara-1a7843283" target="_blank" rel="noopener">www.linkedin.com/in/john-rex-lara-1a7843283</a></p></div>
+        <div class="card"><h3>Location</h3><p>Lucena City, Quezon, Philippines</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> John Rex D. Lara. All rights reserved.</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
